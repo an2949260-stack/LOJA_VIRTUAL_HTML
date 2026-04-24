@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Loja Online</title>
+    <style>
+        /* Estilos movidos para o CSS para manter o HTML limpo */
+        body { 
+            background-color: #f0f0f0; 
+            font-family: Arial, sans-serif; 
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header h1 { color: #003366; }
+        .login-container { max-width: 400px; margin: 20px 0; }
+        .campo { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+        input { padding: 8px; width: 100%; box-sizing: border-box; }
+        button { padding: 10px 20px; cursor: pointer; background-color: #003366; color: white; border: none; }
+        button:hover { background-color: #002244; }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Acesso ao Sistema</h1>
+</header>
+
+<nav aria-label="Navegação secundária">
+    <ul>
+        <li><a href="index.html">Início</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section class="login-container">
+        <h2>Identifique-se</h2>
+        
+        <form action="/login" method="POST">
+            <div class="campo">
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario" name="usuario" required autocomplete="username">
+            </div>
+
+            <div class="campo">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required autocomplete="current-password">
+            </div>
+
+            <button type="submit">Entrar</button>
+        </form>
+    </section>
+
+    <aside>
+        <figure>
+            <img src="https://static.vecteezy.com/system/resources/previews/000/185/753/large_2x/modern-login-form-interface-design-with-username-and-password-vector.jpg" alt="Cadeado digital simbolizando segurança no login" width="300">
+            <figcaption>Seu acesso é protegido por criptografia.</figcaption>
+        </figure>
+    </aside>
+</main>
+
+<footer>
+    <p>&copy; 2026 Mobile Store - Área Administrativa</p>
+    <nav>
+        <a href="index.html">Voltar ao início</a>
+    </nav>
+</footer>
+
+</body>
+</html>

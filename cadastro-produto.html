@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produto | Mobile Store</title>
+    <style>
+        /* Centralizando a estilização no CSS */
+        body { 
+            background-color: #f0f0f0; 
+            font-family: Arial, sans-serif; 
+            color: #333;
+        }
+        h1 { color: #003366; }
+        form { margin-bottom: 20px; }
+        .campo { margin-bottom: 1rem; }
+        label { display: block; font-weight: bold; }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Cadastro de Produto</h1>
+</header>
+
+<nav aria-label="Navegação principal">
+    <ul>
+        <li><a href="index.html">Início</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section>
+        <h2>Informações do Produto</h2>
+        
+        <form action="/cadastrar-produto" method="POST">
+            <div class="campo">
+                <label for="nome-produto">Nome do Produto:</label>
+                <input type="text" id="nome-produto" name="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="preco-produto">Preço (R$):</label>
+                <input type="number" id="preco-produto" name="preco" step="0.01" required>
+            </div>
+
+            <button type="submit">Finalizar Cadastro</button>
+        </form>
+
+        <figure>
+            <img src="https://m.media-amazon.com/images/I/71K4CkU04bL._AC_SL1500_.jpg" alt="Foto do produto a ser cadastrado" width="300">
+            <figcaption>Prévia da imagem do produto.</figcaption>
+        </figure>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Mobile Store - Todos os direitos reservados.</p>
+    <a href="index.html">Voltar ao início</a>
+</footer>
+
+</body>
+</html>

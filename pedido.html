@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Pedido | Loja Online</title>
+    <style>
+        body { 
+            background-color: #f0f0f0; 
+            font-family: Arial, sans-serif; 
+            line-height: 1.6;
+            color: #333;
+        }
+        header h1, section h2 { color: #003366; }
+        .etapas-pedido { background: #fff; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+        .campo-pedido { margin: 20px 0; }
+        label { display: block; font-weight: bold; }
+        input { padding: 8px; width: 100%; max-width: 300px; }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Realizar Pedido</h1>
+</header>
+
+<nav aria-label="Navegação principal">
+    <ul>
+        <li><a href="index.html">Início</a></li>
+    </ul>
+</nav>
+
+<main>
+    <article>
+        <section class="etapas-pedido">
+            <h2>Etapas do Pedido</h2>
+            <ol>
+                <li>Escolher produto</li>
+                <li>Adicionar ao carrinho</li>
+                <li>Confirmar dados</li>
+                <li>Finalizar pedido</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Formulário de Solicitação</h2>
+            <form action="/processar-pedido" method="POST">
+                <div class="campo-pedido">
+                    <label for="nome-produto">Produto desejado:</label>
+                    <input type="text" id="nome-produto" name="produto" required placeholder="Ex: Notebook Gamer">
+                </div>
+
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </section>
+
+        <aside>
+            <figure>
+                <img src="https://m.media-amazon.com/images/I/81fZmxBbQgL._AC_SL1500_.jpg" alt="Ícone ilustrativo de um pacote sendo processado" width="300">
+                <figcaption>Seu pedido será processado em até 24 horas.</figcaption>
+            </figure>
+        </aside>
+    </article>
+</main>
+
+<footer>
+    <p>&copy; 2026 Loja Online - Sistema de Pedidos Internos</p>
+    <nav>
+        <a href="index.html">Voltar ao início</a>
+    </nav>
+</footer>
+
+</body>
+</html>

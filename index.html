@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina inicial | Sistema Administrativo</title>
+    <style>
+        body { 
+            background-color: #f0f0f0; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        header h1 { color: #003366; }
+        
+        /* Estilização básica para o menu não parecer uma lista comum */
+        nav ul { 
+            list-style: none; 
+            padding: 0; 
+        }
+        nav li { margin-bottom: 8px; }
+        nav a { 
+            text-decoration: none; 
+            color: #0055a5; 
+            font-weight: bold; 
+        }
+        nav a:hover { text-decoration: underline; }
+        
+        main { margin-top: 20px; }
+        .bem-vindo { font-size: 1.1em; color: #222; }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Mobile Store</h1>
+</header>
+
+<nav aria-label="Menu principal do sistema">
+    <ul>
+        <li><a href="sobre.html">Sobre a Loja</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="cadastro-cliente.html">Cadastro Cliente</a></li>
+        <li><a href="cadastro-produto.html">Cadastro Produto</a></li>
+        <li><a href="pedido.html">Fazer Pedido</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+</nav>
+
+<main>
+    <article>
+        <header>
+            <h2>Painel de Controle</h2>
+        </header>
+        
+        <section class="bem-vindo">
+            <p><strong>Bem-vindo ao sistema administrativo da loja.</strong></p>
+            <p>Aqui você pode gerenciar clientes, produtos e pedidos de forma centralizada.</p>
+        </section>
+
+        <figure>
+            <img src="imagens/fachada.png" alt="Fachada principal da loja física" width="300">
+            <figcaption>Visão geral da nossa sede administrativa.</figcaption>
+        </figure>
+    </article>
+</main>
+
+<footer>
+    <hr>
+    <p>&copy; 2026 Mobile Store. Acesso restrito a administradores.</p>
+</footer>
+
+</body>
+</html>
