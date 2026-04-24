@@ -6,7 +6,7 @@
 
 
 
-Este projeto consiste no desenvolvimento da \*\*parte cliente (front-end)\*\* de um sistema administrativo de uma loja online, utilizando \*\*apenas HTML\*\*, conforme as diretrizes da disciplina \*\*Tecnologias para Internet\*\*.
+Este projeto consiste no desenvolvimento da parte cliente (front-end) de um sistema administrativo de uma loja online, utilizando apenas HTML, conforme as diretrizes da disciplina Tecnologias para Internet.
 
 
 
