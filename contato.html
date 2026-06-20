@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Mobile Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Contato</h1>
+</header>
+
+<nav aria-label="Navegação principal">
+    <ul>
+        <li><a href="index.html">Início</a></li>
+    </ul>
+</nav>
+
+    <main>
+    <section>
+        <h2>Fale Conosco</h2>
+
+        <form action="/enviar-contato" method="POST" class="needs-validation">
+            <input type="hidden" name="_form" value="contato">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required aria-required="true" aria-label="Nome completo">
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required aria-required="true" aria-label="E-mail">
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required aria-required="true" aria-label="Telefone" placeholder="91234-5678">
+            </div>
+
+            <div class="form-group">
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" name="assunto" required aria-required="true" aria-label="Assunto da mensagem">
+            </div>
+
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" required aria-required="true" aria-label="Mensagem" rows="5"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button class="btn" type="submit">Enviar Mensagem</button>
+            </div>
+        </form>
+
+        <figure>
+            <img src="imagens/suporte_img.webp" alt="Atendente de suporte pronta para ajudar" width="300">
+            <figcaption>Nossa equipe de suporte está disponível em horário comercial.</figcaption>
+        </figure>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Mobile Store - Todos os direitos reservados.</p>
+    <nav>
+        <a href="index.html">Voltar ao início</a>
+    </nav>
+</footer>
+
+</body>
+</html>

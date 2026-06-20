@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header id="site-header">
+    <div class="container">
+      <h1>Cadastro de Cliente</h1>
+    </div>
+</header>
+
+<nav aria-label="Menu principal">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+      </ul>
+    </div>
+</nav>
+
+<main>
+    <div class="container">
+    <article class="card form-grid">
+        <section>
+            <h2>Dados Pessoais</h2>
+            <form id="formCadastroCliente" class="needs-validation" action="#" method="post" novalidate aria-labelledby="form-title">
+                <input type="hidden" name="_form" value="cadastro-cliente">
+
+                <div class="form-group">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" aria-label="Nome completo" aria-required="true" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dataNascimento">Data de nascimento</label>
+                    <input type="date" id="dataNascimento" name="dataNascimento" aria-label="Data de nascimento" aria-required="true" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cpfcnpj">CPF / CNPJ</label>
+                    <input type="text" id="cpfcnpj" name="cpfcnpj" aria-label="CPF ou CNPJ" aria-required="true" placeholder="Só números" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" aria-label="Telefone" aria-required="true" placeholder="91234-5678" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="estado">Estado</label>
+                    <select id="estado" name="estado" required aria-required="true">
+                        <option value="">Selecione o estado...</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="cidade">Cidade</label>
+                    <select id="cidade" name="cidade" required aria-required="true" disabled>
+                        <option value="">Selecione a cidade...</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" aria-label="E-mail" aria-required="true" required>
+                </div>
+
+                <div class="form-group">
+                    <button class="btn" type="submit">Cadastrar</button>
+                    <button type="reset" class="btn secondary">Limpar</button>
+                </div>
+
+            </form>
+        </section>
+
+        <aside>
+            <figure>
+                <img src="imagens/cliente_img.webp" alt="Ilustração de um cliente satisfeito" width="300">
+                <figcaption>Imagem ilustrativa de perfil de cliente.</figcaption>
+            </figure>
+            <p class="muted">Dica: use CPF com 11 dígitos ou CNPJ com 14 dígitos.</p>
+        </aside>
+    </article>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+      <p>&copy; 2026 Mobile Store. Todos os direitos reservados.</p>
+      <nav>
+        <a href="index.html">Voltar para o topo</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Pedido | Loja Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header id="site-header">
+    <h1>Realizar Pedido</h1>
+</header>
+
+<nav aria-label="Navegação principal">
+    <ul>
+        <li><a href="index.html">Início</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section class="card">
+        
+        <header>
+            <h2>Etapas do Pedido</h2>
+        </header>
+        <ol class="steps-list">
+            <li>Confirmar dados</li>
+            <li>Finalizar pedido</li>
+        </ol>
+
+        <hr style="border: 0; border-top: 1px solid #e6e6e6; margin: 20px 0;">
+
+        <header>
+            <h2>Formulário de Solicitação</h2>
+        </header>
+        
+        <form action="/processar-pedido" method="POST" class="needs-validation">
+            <input type="hidden" name="_form" value="pedido">
+
+            <div class="form-group text-left">
+                <label for="pedido-nome">Nome do cliente:</label>
+                <input type="text" id="pedido-nome" name="pedido_nome" required placeholder="Nome completo do cliente">
+            </div>
+
+            <div class="form-group text-left">
+                <label for="pedido-email">E-mail do cliente:</label>
+                <input type="email" id="pedido-email" name="pedido_email" required placeholder="email@dominio.com">
+            </div>
+
+            <div class="form-group text-left">
+                <label for="pedido-telefone">Telefone de contato:</label>
+                <input type="tel" id="pedido-telefone" name="pedido_telefone" required placeholder="91234-5678">
+            </div>
+
+            <div class="form-group text-left">
+                <label for="pedido-endereco">Endereço de entrega:</label>
+                <input type="text" id="pedido-endereco" name="pedido_endereco" required placeholder="Rua, número, bairro">
+            </div>
+
+            <div class="form-group text-left">
+                <label for="pedido-observacoes">Observações:</label>
+                <textarea id="pedido-observacoes" name="pedido_observacoes" rows="3" required placeholder="Observações sobre o pedido"></textarea>
+            </div>
+            
+            <div id="container-itens-venda">
+                <div class="item-produto-linha form-group card">
+                    <h4 class="text-left">Item #1</h4>
+                    <div class="form-group text-left">
+                        <label for="produto-nome-1">Produto desejado:</label>
+                        <input type="text" id="produto-nome-1" name="produto_nome[]" required placeholder="Ex: Notebook Gamer">
+                    </div>
+                    <div class="form-group text-left">
+                        <label for="produto-quantidade-1">Quantidade:</label>
+                        <input type="number" id="produto-quantidade-1" name="produto_qtd[]" required min="1" value="1" placeholder="Quantidade">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group mt-15">
+                <button id="btn-add-item" class="btn btn-secondary" type="button">➕ Adicionar Mais Itens</button>
+            </div>
+
+            <div class="form-group mt-20">
+                <button class="btn" type="submit">Finalizar e Enviar Pedido</button>
+            </div>
+        </form>
+
+        <hr style="border: 0; border-top: 1px solid #e6e6e6; margin: 30px 0;">
+
+        <aside style="width: 100%; display: flex; justify-content: center;">
+            <figure style="margin: 0; padding: 0; text-align: center; max-width: 400px; width: 100%;">
+                <img class="responsive-img" src="https://m.media-amazon.com/images/I/81fZmxBbQgL._AC_SL1500_.jpg" alt="Ícone ilustrativo de um pacote sendo processado" style="display: block; margin: 0 auto;">
+                <figcaption class="muted" style="margin-top: 10px;">Seu pedido será processado em até 24 horas.</figcaption>
+            </figure>
+        </aside>
+
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Loja Online - Sistema de Pedidos Internos</p>
+    <nav>
+        <a href="index.html">Voltar ao início</a>
+    </nav>
+</footer>
+
+</body>
+</html>

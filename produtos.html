@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos Disponíveis | Mobile Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header id="site-header">
+    <h1>Produtos Disponíveis</h1>
+</header>
+
+<nav aria-label="Navegação principal">
+    <ul>
+        <li><a href="index.html">Início</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section class="card">
+        <h2>Catálogo de Itens</h2>
+        <p class="muted">Lista de periféricos e hardwares com preços atualizados</p>
+        
+        <div class="products-grid">
+            <div class="product card">
+                <span class="badge">Promo</span>
+                <img src="imagens/notebook.png" alt="Notebook">
+                <strong>Notebook</strong>
+                <p id="desc-101" class="muted product-description">Intel Core i5, 8GB RAM, SSD 256GB. Perfeito para estudos e trabalho.</p>
+                <div class="price sale"><span class="currency">R$</span> 3.200,00</div>
+                <div class="actions">
+                    <button class="btn add-cart" data-id="101" aria-label="Adicionar Notebook ao carrinho">Adicionar ao carrinho</button>
+                    <button class="btn-secondary btn-ver-mais" data-target="desc-101" aria-label="Ver mais detalhes">Ver mais</button>
+                </div>
+            </div>
+
+            <div class="product card">
+                <img src="imagens/mouse.png" alt="Mouse">
+                <strong>Mouse</strong>
+                <p id="desc-102" class="muted product-description">Mouse óptico sem fio, 1600 DPI, conexão USB estável e ergonômico.</p>
+                <div class="price"><span class="currency">R$</span> 80,00</div>
+                <div class="actions">
+                    <button class="btn add-cart" data-id="102">Adicionar ao carrinho</button>
+                    <button class="btn-secondary btn-ver-mais" data-target="desc-102" aria-label="Ver mais detalhes">Ver mais</button>
+                </div>
+            </div>
+        </div>
+
+        <hr class="section-divider">
+
+        <h3>Produtos em destaque</h3>
+        <div id="featured-products" class="featured"></div>
+
+        <aside class="featured-section" style="width: 100%; display: flex; justify-content: center; margin-top: 25px;">
+            <figure class="featured-figure" style="margin: 0; padding: 0; text-align: center; max-width: 500px; width: 100%;">
+                <img src="https://b2ti.com.br/unidades-de-negocio-e-produtos/wp-content/uploads/2022/11/home-page-banner-para-mobile-b2ti-1080x720-_1_.webp" alt="Conjunto de equipamentos de informática em exposição" class="featured-image responsive-img" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+                <figcaption class="muted featured-caption" style="margin-top: 10px;">Produtos em destaque nesta semana.</figcaption>
+            </figure>
+        </aside>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Mobile Store - Preços válidos enquanto durarem os estoques.</p>
+    <nav>
+        <a href="index.html">Voltar ao início</a>
+    </nav>
+</footer>
+
+</body>
+</html>

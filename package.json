@@ -1,0 +1,16 @@
+{
+  "name": "loja_virtual_html",
+  "version": "1.0.0",
+  "description": "**Sistema Administrativo de Loja Online (HTML)**",
+  "main": "script.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"No tests configured\" && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  
+}
