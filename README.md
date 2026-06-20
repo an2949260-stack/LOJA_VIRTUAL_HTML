@@ -2,7 +2,7 @@
 
 
 
-📌 Descrição do Projeto
+Descrição do Projeto
 
 
 
@@ -18,7 +18,7 @@ O sistema simula funcionalidades básicas de uma loja, como cadastro, login e pe
 
 
 
-🎯 Objetivo
+Objetivo
 
 
 
@@ -42,7 +42,7 @@ O objetivo do trabalho é aplicar conceitos fundamentais de:
 
 
 
-🧱 Estrutura do Projeto
+Estrutura do Projeto
 
 
 
@@ -96,7 +96,7 @@ loja\_virtual/
 
 
 
-📄 Páginas Desenvolvidas
+Páginas Desenvolvidas
 
 
 
@@ -128,7 +128,7 @@ loja\_virtual/
 
 
 
-🧩 Funcionalidades
+Funcionalidades
 
 
 
@@ -150,7 +150,7 @@ loja\_virtual/
 
 
 
-🛠 Tecnologias Utilizadas
+Tecnologias Utilizadas
 
 
 
@@ -158,7 +158,7 @@ loja\_virtual/
 
 
 
-> ⚠️ Restrição do projeto:
+> Restrição do projeto:
 
 >
 
@@ -172,7 +172,7 @@ loja\_virtual/
 
 
 
-\## 🎨 Padrão Visual
+\## Padrão Visual
 
 
 
@@ -188,7 +188,7 @@ loja\_virtual/
 
 
 
-📚 Conceitos Aplicados
+Conceitos Aplicados
 
 
 
@@ -210,7 +210,7 @@ loja\_virtual/
 
 
 
-🚀 Como Executar
+Como Executar
 
 
 
@@ -256,7 +256,7 @@ Ou utilize a extensão \*\*Live Server\*\* no VS Code.
 
 \---
 
-⚠️ Observações
+Observações
 
 
 
@@ -272,7 +272,7 @@ Ou utilize a extensão \*\*Live Server\*\* no VS Code.
 
 
 
-👨‍💻 Autor
+Autor
 
 
 
@@ -286,17 +286,14 @@ Acadêmico de Análise e Desenvolvimento de Sistemas
 
 
 
-📌 Status do Projeto
+Status do Projeto
 
 
 
 ✅ Concluído
 
-📚 Projeto acadêmico
+Projeto acadêmico
 
 
 
 \---
-
-
-
